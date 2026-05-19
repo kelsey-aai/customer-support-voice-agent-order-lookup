@@ -9,6 +9,7 @@ import json
 
 TOOLS = [
     {
+        "type": "function",
         "name": "get_order_status",
         "description": (
             "Look up the status of a customer order by ID. Returns shipping "
@@ -26,6 +27,7 @@ TOOLS = [
         },
     },
     {
+        "type": "function",
         "name": "initiate_return",
         "description": (
             "Start a return for a delivered order. Emails a return label "
@@ -44,6 +46,7 @@ TOOLS = [
         },
     },
     {
+        "type": "function",
         "name": "schedule_callback",
         "description": "Schedule a callback to the caller.",
         "parameters": {
@@ -62,6 +65,7 @@ TOOLS = [
         },
     },
     {
+        "type": "function",
         "name": "transfer_to_human",
         "description": (
             "Transfer the caller to a human agent. Call this when the caller "

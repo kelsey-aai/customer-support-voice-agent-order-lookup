@@ -89,7 +89,7 @@ Replace the stubs in `tools.py`:
 | `schedule_callback` | Print statement | Your scheduling backend (Salesforce, Front, custom) |
 | `transfer_to_human` | Print statement | Your contact center handoff (Zendesk Talk, Five9, custom) |
 
-For `transfer_to_human` specifically: pass the full conversation history to the human agent so the caller doesn't repeat themselves. The Voice Agent API gives you `transcript.user.final` and `transcript.agent.final` events you can write to your CRM during the call.
+For `transfer_to_human` specifically: pass the full conversation history to the human agent so the caller doesn't repeat themselves. The Voice Agent API gives you `transcript.user` and `transcript.agent` events you can write to your CRM during the call.
 
 ---
 
